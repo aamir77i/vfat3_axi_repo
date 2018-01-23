@@ -1,0 +1,6 @@
+11:54:13 **** Incremental Build of configuration Debug for project echo_server_bsp_xllfifo_polling_example_2 ****
+make all 
+make: Nothing to be done for `all'.
+
+11:54:13 Build Finished (took 123ms)
+

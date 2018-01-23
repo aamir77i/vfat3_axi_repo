@@ -1,0 +1,22 @@
+11:54:12 **** Incremental Build of configuration Debug for project echo_server_bsp_xiic_slave_example_1 ****
+make all 
+'Building file: ../src/xiic_slave_example.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xiic_slave_example.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xiic_slave_example.d" -MT"src/xiic_slave_example.o" -o "src/xiic_slave_example.o" "../src/xiic_slave_example.c"
+../src/xiic_slave_example.c: In function 'SetupInterruptSystem':
+../src/xiic_slave_example.c:91:22: error: 'XPAR_INTC_0_IIC_0_VEC_ID' undeclared (first use in this function)
+ #define IIC_INTR_ID  XPAR_INTC_0_IIC_0_VEC_ID
+                      ^
+../src/xiic_slave_example.c:473:47: note: in expansion of macro 'IIC_INTR_ID'
+  Status = XIntc_Connect(&InterruptController, IIC_INTR_ID,
+                                               ^~~~~~~~~~~
+../src/xiic_slave_example.c:91:22: note: each undeclared identifier is reported only once for each function it appears in
+ #define IIC_INTR_ID  XPAR_INTC_0_IIC_0_VEC_ID
+                      ^
+../src/xiic_slave_example.c:473:47: note: in expansion of macro 'IIC_INTR_ID'
+  Status = XIntc_Connect(&InterruptController, IIC_INTR_ID,
+                                               ^~~~~~~~~~~
+make: *** [src/xiic_slave_example.o] Error 1
+
+11:54:12 Build Finished (took 225ms)
+

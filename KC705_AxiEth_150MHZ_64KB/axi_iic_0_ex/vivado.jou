@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Nov  8 11:58:10 2017
+# Process ID: 14996
+# Current directory: f:/XAPP1026/KC705_AxiEth_150MHZ_64KB/axi_iic_0_ex
+# Command line: vivado.exe -notrace -source f:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/.Xil/axi_iic_0/tmp_axi_iic_0.srcs/sources_1/ip/axi_iic_0/axi_iic_0_ex.tcl
+# Log file: f:/XAPP1026/KC705_AxiEth_150MHZ_64KB/axi_iic_0_ex/vivado.log
+# Journal file: f:/XAPP1026/KC705_AxiEth_150MHZ_64KB/axi_iic_0_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source f:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/.Xil/axi_iic_0/tmp_axi_iic_0.srcs/sources_1/ip/axi_iic_0/axi_iic_0_ex.tcl -notrace
+update_compile_order -fileset sources_1
+launch_simulation
+source axi_iic_0_exdes_tb.tcl
+run 10 ms
+close_sim

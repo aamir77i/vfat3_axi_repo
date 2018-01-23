@@ -1,0 +1,929 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Sep 01 12:03:46 2017
+# Process ID: 11980
+# Current directory: F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12804 F:\XAPP1026\KC705_AxiEth_150MHZ_64KB\HW\project_2.xpr
+# Log file: F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/vivado.log
+# Journal file: F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.xpr
+INFO: [Project 1-313] Project file moved from 'C:/PROJECT_FOR_RELEASE/KC705_150MHZ_64KB/project_150MHz' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'project_2.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'mb_subsystem.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+mb_subsystem_ilmb_v10_1
+mb_subsystem_mig_7series_0_0
+mb_subsystem_m01_regslice_0
+mb_subsystem_microblaze_0_0
+mb_subsystem_dlmb_v10_0
+mb_subsystem_axi_ethernet_0_dma_0
+mb_subsystem_dlmb_bram_if_cntlr_0
+mb_subsystem_lmb_bram_0
+mb_subsystem_s00_regslice_0
+mb_subsystem_ilmb_bram_if_cntlr_1
+mb_subsystem_microblaze_0_axi_intc_0
+mb_subsystem_microblaze_0_xlconcat_0
+mb_subsystem_mdm_1_0
+mb_subsystem_proc_sys_reset_1_0
+mb_subsystem_axi_timer_0_0
+mb_subsystem_axi_uartlite_0_0
+mb_subsystem_axi_bram_ctrl_0_0
+mb_subsystem_s04_regslice_0
+mb_subsystem_blk_mem_gen_0_1
+mb_subsystem_axi_ethernet_0_0
+mb_subsystem_s02_regslice_0
+mb_subsystem_clk_wiz_0_0
+mb_subsystem_xbar_1
+mb_subsystem_xbar_0
+mb_subsystem_s00_data_fifo_0
+mb_subsystem_s01_regslice_0
+mb_subsystem_s01_data_fifo_0
+mb_subsystem_s02_data_fifo_0
+mb_subsystem_s03_regslice_0
+mb_subsystem_s03_data_fifo_0
+mb_subsystem_s04_data_fifo_0
+mb_subsystem_m00_regslice_0
+
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 974.520 ; gain = 268.613
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {mb_subsystem_lmb_bram_0 mb_subsystem_proc_sys_reset_1_0 mb_subsystem_ilmb_v10_1 mb_subsystem_axi_bram_ctrl_0_0 mb_subsystem_dlmb_bram_if_cntlr_0 mb_subsystem_axi_ethernet_0_dma_0 mb_subsystem_mig_7series_0_0 mb_subsystem_axi_timer_0_0 mb_subsystem_axi_uartlite_0_0 mb_subsystem_blk_mem_gen_0_1 mb_subsystem_microblaze_0_axi_intc_0 mb_subsystem_microblaze_0_xlconcat_0 mb_subsystem_axi_mem_intercon_1 mb_subsystem_mdm_1_0 mb_subsystem_axi_ethernet_0_0 mb_subsystem_ilmb_bram_if_cntlr_1 mb_subsystem_clk_wiz_0_0 mb_subsystem_microblaze_0_0 mb_subsystem_microblaze_0_axi_periph_0 mb_subsystem_dlmb_v10_0}] -log ip_upgrade.log
+Upgrading 'F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd'
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_0
+Adding cell -- xilinx.com:ip:axi_ethernet:6.2 - axi_ethernet_0
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_ethernet_0_dma
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.2 - blk_mem_gen_0
+Adding cell -- xilinx.com:ip:clk_wiz:5.1 - clk_wiz_0
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:microblaze:9.4 - microblaze_0
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding cell -- xilinx.com:ip:mig_7series:2.2 - mig_7series_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s04_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s04_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s03_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s03_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s02_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s02_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s01_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s01_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s00_data_fifo
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.2 - lmb_bram
+Successfully read diagram <mb_subsystem> from BD file <F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd>
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] mb_subsystem_axi_bram_ctrl_0_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] mb_subsystem_axi_bram_ctrl_0_0: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_axi_bram_ctrl_0_0 (AXI BRAM Controller 4.0) from revision 2 to revision 9
+INFO: [IP_Flow 19-1972] Upgraded mb_subsystem_axi_ethernet_0_0 from AXI 1G/2.5G Ethernet Subsystem 6.2 to AXI 1G/2.5G Ethernet Subsystem 7.0
+INFO: [IP_Flow 19-4701] Upgrade has renamed interface 'INT.interrupt' as 'INTR.interrupt' (xilinx.com:signal:interrupt:1.0)
+INFO: [IP_Flow 19-4701] Upgrade has renamed interface 'INT.mac_irq' as 'INTR.mac_irq' (xilinx.com:signal:interrupt:1.0)
+INFO: [IP_Flow 19-4701] Upgrade has renamed interface 'mdio_io' as 'mdio' (xilinx.com:interface:mdio:1.0)
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'mdio_io_io'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'mdio_io_mdc'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'mdio_mdc'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'mdio_mdio_i'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'mdio_mdio_o'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'mdio_mdio_t'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'IP mb_subsystem_axi_ethernet_0_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1165] The interface pin 'mdio_io' with bus definition 'xilinx.com:interface:mdio:1.0' is not found on the upgraded version of the cell '/axi_ethernet_0'. Its connection to the interface net 'axi_ethernet_0_mdio' has been removed. 
+CRITICAL WARNING: [BD 41-1173] Cannot locate slave </axi_ethernet_0/s_axi/Reg> to create segment <SEG_axi_ethernet_0_Reg> 
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_axi_ethernet_0_dma_0 (AXI Direct Memory Access 7.1) from revision 4 to revision 11
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_axi_mem_intercon_1 (AXI Interconnect 2.1) from revision 4 to revision 11
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_axi_timer_0_0 (AXI Timer 2.0) from revision 6 to revision 12
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_axi_uartlite_0_0 (AXI Uartlite 2.0) from revision 6 to revision 14
+INFO: [IP_Flow 19-1972] Upgraded mb_subsystem_blk_mem_gen_0_1 from Block Memory Generator 8.2 to Block Memory Generator 8.3
+INFO: [IP_Flow 19-1972] Upgraded mb_subsystem_clk_wiz_0_0 from Clocking Wizard 5.1 to Clocking Wizard 5.3
+WARNING: [IP_Flow 19-4707] Upgraded port order differs after port 'reset'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'IP mb_subsystem_clk_wiz_0_0'. These changes may impact your design.
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_dlmb_bram_if_cntlr_0 (LMB BRAM Controller 4.0) from revision 5 to revision 10
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_dlmb_v10_0 (Local Memory Bus (LMB) 1.0 3.0) from revision 4 to revision 9
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_ilmb_bram_if_cntlr_1 (LMB BRAM Controller 4.0) from revision 5 to revision 10
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_ilmb_v10_1 (Local Memory Bus (LMB) 1.0 3.0) from revision 4 to revision 9
+INFO: [IP_Flow 19-1972] Upgraded mb_subsystem_lmb_bram_0 from Block Memory Generator 8.2 to Block Memory Generator 8.3
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_mdm_1_0 (MicroBlaze Debug Module (MDM) 3.2) from revision 0 to revision 7
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'Dbg_Disable_0'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'IP mb_subsystem_mdm_1_0'. These changes may impact your design.
+INFO: [IP_Flow 19-1972] Upgraded mb_subsystem_microblaze_0_0 from MicroBlaze 9.4 to MicroBlaze 10.0
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'Dbg_Disable'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'IP mb_subsystem_microblaze_0_0'. These changes may impact your design.
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_microblaze_0_axi_intc_0 (AXI Interrupt Controller 4.1) from revision 2 to revision 8
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_microblaze_0_axi_periph_0 (AXI Interconnect 2.1) from revision 4 to revision 11
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_microblaze_0_xlconcat_0 (Concat 2.1) from revision 0 to revision 2
+INFO: [IP_Flow 19-1972] Upgraded mb_subsystem_mig_7series_0_0 from Memory Interface Generator (MIG 7 Series) 2.2 to Memory Interface Generator (MIG 7 Series) 4.0
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_proc_sys_reset_1_0 (Processor System Reset 5.0) from revision 6 to revision 10
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'IP mb_subsystem_axi_ethernet_0_0' has identified issues that may require user intervention. Please review the upgrade log 'f:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'IP mb_subsystem_clk_wiz_0_0' has identified issues that may require user intervention. Please review the upgrade log 'f:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'IP mb_subsystem_mdm_1_0' has identified issues that may require user intervention. Please review the upgrade log 'f:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'IP mb_subsystem_microblaze_0_0' has identified issues that may require user intervention. Please review the upgrade log 'f:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+WARNING: [BD 41-248] Illegal connection  <axi_ethernet_0_mdio> between <nullptr> and </mdio_io>  is missing one side
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ui/bd_a65fb5c5.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:42 ; elapsed = 00:01:10 . Memory (MB): peak = 1406.805 ; gain = 410.496
+export_ip_user_files -of_objects [get_ips {mb_subsystem_lmb_bram_0 mb_subsystem_proc_sys_reset_1_0 mb_subsystem_ilmb_v10_1 mb_subsystem_axi_bram_ctrl_0_0 mb_subsystem_dlmb_bram_if_cntlr_0 mb_subsystem_axi_ethernet_0_dma_0 mb_subsystem_mig_7series_0_0 mb_subsystem_axi_timer_0_0 mb_subsystem_axi_uartlite_0_0 mb_subsystem_blk_mem_gen_0_1 mb_subsystem_microblaze_0_axi_intc_0 mb_subsystem_microblaze_0_xlconcat_0 mb_subsystem_axi_mem_intercon_1 mb_subsystem_mdm_1_0 mb_subsystem_axi_ethernet_0_0 mb_subsystem_ilmb_bram_if_cntlr_1 mb_subsystem_clk_wiz_0_0 mb_subsystem_microblaze_0_0 mb_subsystem_microblaze_0_axi_periph_0 mb_subsystem_dlmb_v10_0}] -no_script -sync -force -quiet
+generate_target all [get_files  F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd]
+CRITICAL WARNING: [BD 41-1356] Address block </axi_ethernet_0/s_axi/Reg0> is not mapped into </microblaze_0/Data>. Please use Address Editor to either map or exclude it.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd 
+generate_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1406.805 ; gain = 0.000
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+report_ip_status -name ip_status 
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "mdio_mdc" }  [get_bd_intf_pins axi_ethernet_0/mdio]
+INFO: [board_rule 100-100] set_property CONFIG.MDIO_BOARD_INTERFACE mdio_mdc [get_bd_cells /axi_ethernet_0]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:mdio_rtl:1.0 mdio_mdc
+INFO: [board_rule 100-100] connect_bd_intf_net /mdio_mdc /axi_ethernet_0/mdio
+assign_bd_address
+</axi_ethernet_0/s_axi/Reg0> is being mapped into </microblaze_0/Data> at <0x40C00000 [ 256K ]>
+reset_run synth_1
+save_bd_design
+WARNING: [BD 41-248] Illegal connection  <axi_ethernet_0_mdio> between <nullptr> and </mdio_io>  is missing one side
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ui/bd_a65fb5c5.ui> 
+launch_runs impl_1 -jobs 4
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd 
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+startgroup
+endgroup
+startgroup
+set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {12} CONFIG.CLKOUT1_JITTER {91.783} CONFIG.CLKOUT1_PHASE_ERROR {73.619}] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+WARNING: [BD 41-248] Illegal connection  <axi_ethernet_0_mdio> between <nullptr> and </mdio_io>  is missing one side
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+launch_runs impl_1 -jobs 4
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(125125000)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd 
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+startgroup
+set_property -dict [list CONFIG.PRIMITIVE {MMCM} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} CONFIG.MMCM_DIVCLK_DIVIDE {8} CONFIG.MMCM_CLKFBOUT_MULT_F {41.625} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.250} CONFIG.CLKOUT1_JITTER {303.419} CONFIG.CLKOUT1_PHASE_ERROR {333.289}] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+WARNING: [BD 41-248] Illegal connection  <axi_ethernet_0_mdio> between <nullptr> and </mdio_io>  is missing one side
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+launch_runs impl_1 -jobs 4
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd 
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+startgroup
+endgroup
+save_bd_design
+WARNING: [BD 41-248] Illegal connection  <axi_ethernet_0_mdio> between <nullptr> and </mdio_io>  is missing one side
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+launch_runs synth_1 -jobs 4
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd 
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+WARNING: [IP_Flow 19-4331] Invalid usage of property - Setting range property is not allowed in procedure init_gui
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {125} CONFIG.MMCM_DIVCLK_DIVIDE {8} CONFIG.MMCM_CLKFBOUT_MULT_F {41.625} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.250} CONFIG.CLKOUT1_JITTER {303.419} CONFIG.CLKOUT1_PHASE_ERROR {333.289}] [get_bd_cells clk_wiz_0]
+endgroup
+validate_bd_design
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1563.539 ; gain = 0.000
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+WARNING: [IP_Flow 19-4331] Invalid usage of property - Setting range property is not allowed in procedure init_gui
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1]
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1]'
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1]
+validate_bd_design
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/axi_ethernet_0/gtx_clk
+
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins axi_ethernet_0/gtx_clk]
+validate_bd_design
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1563.539 ; gain = 0.000
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+reset_property CONFIG.FREQ_HZ [get_bd_pins gtx_clk]
+ERROR: [Common 17-229] Tcl reset_property command for property <CONFIG.FREQ_HZ> is currently not supported.  The property <CONFIG.FREQ_HZ> cannot be reset.
+ERROR: [Common 17-39] 'reset_property' failed due to earlier errors.
+validate_bd_design
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+validate_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1563.539 ; gain = 0.000
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+validate_bd_design
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1563.539 ; gain = 0.000
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+reset_property CONFIG.FREQ_HZ [get_bd_pins clk_out1]
+ERROR: [Common 17-229] Tcl reset_property command for property <CONFIG.FREQ_HZ> is currently not supported.  The property <CONFIG.FREQ_HZ> cannot be reset.
+ERROR: [Common 17-39] 'reset_property' failed due to earlier errors.
+reset_property CONFIG.FREQ_HZ [get_bd_pins clk_out1]
+ERROR: [Common 17-229] Tcl reset_property command for property <CONFIG.FREQ_HZ> is currently not supported.  The property <CONFIG.FREQ_HZ> cannot be reset.
+ERROR: [Common 17-39] 'reset_property' failed due to earlier errors.
+save_bd_design
+WARNING: [BD 41-248] Illegal connection  <axi_ethernet_0_mdio> between <nullptr> and </mdio_io>  is missing one side
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1]
+delete_bd_objs [get_bd_cells clk_wiz_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.3 clk_wiz_0
+endgroup
+set_property location {6 2333 810} [get_bd_cells clk_wiz_0]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins axi_ethernet_0/gtx_clk]
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {125} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT0_DIVIDE_F {8.000} CONFIG.CLKOUT1_JITTER {125.247}] [get_bd_cells clk_wiz_0]
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {125} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT0_DIVIDE_F {8.000} CONFIG.CLKOUT1_JITTER {125.247}] [get_bd_cells clk_wiz_0]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins axi_ethernet_0/gtx_clk]'
+undo
+INFO: [Common 17-17] undo 'set_property location {6 2333 810} [get_bd_cells clk_wiz_0]'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.3 clk_wiz_0'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_cells clk_wiz_0]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins axi_ethernet_0/gtx_clk]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1]'
+regenerate_bd_layout
+undo
+INFO: [Common 17-17] undo 'regenerate_bd_layout'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {125} CONFIG.MMCM_DIVCLK_DIVIDE {8} CONFIG.MMCM_CLKFBOUT_MULT_F {41.625} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.250} CONFIG.CLKOUT1_JITTER {303.419} CONFIG.CLKOUT1_PHASE_ERROR {333.289}] [get_bd_cells clk_wiz_0]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property -dict [list CONFIG.PRIMITIVE {MMCM} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} CONFIG.MMCM_DIVCLK_DIVIDE {8} CONFIG.MMCM_CLKFBOUT_MULT_F {41.625} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.250} CONFIG.CLKOUT1_JITTER {303.419} CONFIG.CLKOUT1_PHASE_ERROR {333.289}] [get_bd_cells clk_wiz_0]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {12} CONFIG.CLKOUT1_JITTER {91.783} CONFIG.CLKOUT1_PHASE_ERROR {73.619}] [get_bd_cells clk_wiz_0]'
+INFO: [Common 17-17] undo 'startgroup'
+validate_bd_design
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1597.465 ; gain = 0.000
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1] [get_bd_cells clk_wiz_0]
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1] [get_bd_cells clk_wiz_0]'
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1] [get_bd_cells clk_wiz_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.3 clk_wiz_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {125} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT0_DIVIDE_F {8.000} CONFIG.CLKOUT1_JITTER {125.247}] [get_bd_cells clk_wiz_0]
+endgroup
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins axi_ethernet_0/gtx_clk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins mig_7series_0/ui_clk]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "reset" }  [get_bd_pins clk_wiz_0/reset]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /clk_wiz_0]
+INFO: [board_rule 100-100] set_property CONFIG.RESET_BOARD_INTERFACE reset [get_bd_cells /clk_wiz_0]
+INFO: [board_rule 100-100] connect_bd_net /reset /clk_wiz_0/reset
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_HIGH /reset
+validate_bd_design
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1597.465 ; gain = 0.000
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+report_ip_status -name ip_status 
+open_bd_design {f:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_ethernet_0_0/bd_0/bd_1ed2.bd}
+current_bd_design [get_bd_designs mb_subsystem]
+regenerate_bd_layout
+save_bd_design
+WARNING: [BD 41-248] Illegal connection  <axi_ethernet_0_mdio> between <nullptr> and </mdio_io>  is missing one side
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ui/bd_a65fb5c5.ui> 
+validate_bd_design
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1826.078 ; gain = 0.266
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+save_bd_design
+WARNING: [BD 41-248] Illegal connection  <axi_ethernet_0_mdio> between <nullptr> and </mdio_io>  is missing one side
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ui/bd_a65fb5c5.ui> 
+validate_bd_design
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1838.039 ; gain = 0.000
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+save_bd_design
+WARNING: [BD 41-248] Illegal connection  <axi_ethernet_0_mdio> between <nullptr> and </mdio_io>  is missing one side
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+validate_bd_design
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+validate_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1838.039 ; gain = 0.000
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+close_project
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Mon Sep 04 10:37:17 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 04 10:37:17 2017...
+open_project F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.xpr
+INFO: [Project 1-313] Project file moved from 'C:/PROJECT_FOR_RELEASE/KC705_150MHZ_32KB/project_150MHz' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'project_2.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'mb_subsystem.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+mb_subsystem_ilmb_v10_1
+mb_subsystem_mig_7series_0_0
+mb_subsystem_m01_regslice_0
+mb_subsystem_microblaze_0_0
+mb_subsystem_dlmb_v10_0
+mb_subsystem_axi_ethernet_0_dma_0
+mb_subsystem_dlmb_bram_if_cntlr_0
+mb_subsystem_lmb_bram_0
+mb_subsystem_s00_regslice_0
+mb_subsystem_ilmb_bram_if_cntlr_1
+mb_subsystem_microblaze_0_axi_intc_0
+mb_subsystem_microblaze_0_xlconcat_0
+mb_subsystem_mdm_1_0
+mb_subsystem_proc_sys_reset_1_0
+mb_subsystem_axi_timer_0_0
+mb_subsystem_axi_uartlite_0_0
+mb_subsystem_axi_bram_ctrl_0_0
+mb_subsystem_s04_regslice_0
+mb_subsystem_blk_mem_gen_0_1
+mb_subsystem_axi_ethernet_0_0
+mb_subsystem_s02_regslice_0
+mb_subsystem_clk_wiz_0_0
+mb_subsystem_xbar_1
+mb_subsystem_xbar_0
+mb_subsystem_s00_data_fifo_0
+mb_subsystem_s01_regslice_0
+mb_subsystem_s01_data_fifo_0
+mb_subsystem_s02_data_fifo_0
+mb_subsystem_s03_regslice_0
+mb_subsystem_s03_data_fifo_0
+mb_subsystem_s04_data_fifo_0
+mb_subsystem_m00_regslice_0
+
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1838.039 ; gain = 0.000
+open_bd_design {F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd}
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_0
+Adding cell -- xilinx.com:ip:axi_ethernet:6.2 - axi_ethernet_0
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_ethernet_0_dma
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.2 - blk_mem_gen_0
+Adding cell -- xilinx.com:ip:clk_wiz:5.1 - clk_wiz_0
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:microblaze:9.4 - microblaze_0
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding cell -- xilinx.com:ip:mig_7series:2.2 - mig_7series_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s04_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s04_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s03_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s03_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s02_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s02_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s01_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s01_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s00_data_fifo
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.2 - lmb_bram
+Successfully read diagram <mb_subsystem> from BD file <F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd>
+validate_bd_design
+ERROR: [BD 5-336] This command cannot be run, as the BD-design is locked. Locked reason(s):
+* BD design contains locked IPs. Please run report_ip_status for more details and recommendations on how to fix this issue. 
+List of locked IPs: 
+mb_subsystem_ilmb_v10_1
+mb_subsystem_mig_7series_0_0
+mb_subsystem_m01_regslice_0
+mb_subsystem_microblaze_0_0
+mb_subsystem_dlmb_v10_0
+mb_subsystem_axi_ethernet_0_dma_0
+mb_subsystem_dlmb_bram_if_cntlr_0
+mb_subsystem_lmb_bram_0
+mb_subsystem_s00_regslice_0
+mb_subsystem_ilmb_bram_if_cntlr_1
+mb_subsystem_microblaze_0_axi_intc_0
+mb_subsystem_microblaze_0_xlconcat_0
+mb_subsystem_mdm_1_0
+mb_subsystem_proc_sys_reset_1_0
+mb_subsystem_axi_timer_0_0
+mb_subsystem_axi_uartlite_0_0
+mb_subsystem_axi_bram_ctrl_0_0
+mb_subsystem_s04_regslice_0
+mb_subsystem_blk_mem_gen_0_1
+mb_subsystem_axi_ethernet_0_0
+mb_subsystem_s02_regslice_0
+mb_subsystem_clk_wiz_0_0
+mb_subsystem_xbar_1
+mb_subsystem_xbar_0
+mb_subsystem_s00_data_fifo_0
+mb_subsystem_s01_regslice_0
+mb_subsystem_s01_data_fifo_0
+mb_subsystem_s02_data_fifo_0
+mb_subsystem_s03_regslice_0
+mb_subsystem_s03_data_fifo_0
+mb_subsystem_s04_data_fifo_0
+mb_subsystem_m00_regslice_0
+
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {mb_subsystem_axi_bram_ctrl_0_0 mb_subsystem_dlmb_bram_if_cntlr_0 mb_subsystem_dlmb_v10_0 mb_subsystem_ilmb_bram_if_cntlr_1 mb_subsystem_axi_ethernet_0_dma_0 mb_subsystem_axi_mem_intercon_1 mb_subsystem_axi_uartlite_0_0 mb_subsystem_axi_ethernet_0_0 mb_subsystem_clk_wiz_0_0 mb_subsystem_microblaze_0_axi_periph_0 mb_subsystem_ilmb_v10_1 mb_subsystem_proc_sys_reset_1_0 mb_subsystem_lmb_bram_0 mb_subsystem_microblaze_0_axi_intc_0 mb_subsystem_microblaze_0_0 mb_subsystem_mig_7series_0_0 mb_subsystem_axi_timer_0_0 mb_subsystem_mdm_1_0 mb_subsystem_blk_mem_gen_0_1 mb_subsystem_microblaze_0_xlconcat_0}] -log ip_upgrade.log
+Upgrading 'F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd'
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] mb_subsystem_axi_bram_ctrl_0_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] mb_subsystem_axi_bram_ctrl_0_0: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_axi_bram_ctrl_0_0 (AXI BRAM Controller 4.0) from revision 2 to revision 9
+INFO: [IP_Flow 19-1972] Upgraded mb_subsystem_axi_ethernet_0_0 from AXI 1G/2.5G Ethernet Subsystem 6.2 to AXI 1G/2.5G Ethernet Subsystem 7.0
+INFO: [IP_Flow 19-4701] Upgrade has renamed interface 'INT.interrupt' as 'INTR.interrupt' (xilinx.com:signal:interrupt:1.0)
+INFO: [IP_Flow 19-4701] Upgrade has renamed interface 'INT.mac_irq' as 'INTR.mac_irq' (xilinx.com:signal:interrupt:1.0)
+INFO: [IP_Flow 19-4701] Upgrade has renamed interface 'mdio_io' as 'mdio' (xilinx.com:interface:mdio:1.0)
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'mdio_io_io'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'mdio_io_mdc'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'mdio_mdc'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'mdio_mdio_i'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'mdio_mdio_o'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'mdio_mdio_t'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'IP mb_subsystem_axi_ethernet_0_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1165] The interface pin 'mdio_io' with bus definition 'xilinx.com:interface:mdio:1.0' is not found on the upgraded version of the cell '/axi_ethernet_0'. Its connection to the interface net 'axi_ethernet_0_mdio' has been removed. 
+CRITICAL WARNING: [BD 41-1173] Cannot locate slave </axi_ethernet_0/s_axi/Reg> to create segment <SEG_axi_ethernet_0_Reg> 
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_axi_ethernet_0_dma_0 (AXI Direct Memory Access 7.1) from revision 4 to revision 11
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_axi_mem_intercon_1 (AXI Interconnect 2.1) from revision 4 to revision 11
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_axi_timer_0_0 (AXI Timer 2.0) from revision 6 to revision 12
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_axi_uartlite_0_0 (AXI Uartlite 2.0) from revision 6 to revision 14
+INFO: [IP_Flow 19-1972] Upgraded mb_subsystem_blk_mem_gen_0_1 from Block Memory Generator 8.2 to Block Memory Generator 8.3
+INFO: [IP_Flow 19-1972] Upgraded mb_subsystem_clk_wiz_0_0 from Clocking Wizard 5.1 to Clocking Wizard 5.3
+WARNING: [IP_Flow 19-4707] Upgraded port order differs after port 'reset'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'IP mb_subsystem_clk_wiz_0_0'. These changes may impact your design.
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_dlmb_bram_if_cntlr_0 (LMB BRAM Controller 4.0) from revision 5 to revision 10
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_dlmb_v10_0 (Local Memory Bus (LMB) 1.0 3.0) from revision 4 to revision 9
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_ilmb_bram_if_cntlr_1 (LMB BRAM Controller 4.0) from revision 5 to revision 10
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_ilmb_v10_1 (Local Memory Bus (LMB) 1.0 3.0) from revision 4 to revision 9
+INFO: [IP_Flow 19-1972] Upgraded mb_subsystem_lmb_bram_0 from Block Memory Generator 8.2 to Block Memory Generator 8.3
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_mdm_1_0 (MicroBlaze Debug Module (MDM) 3.2) from revision 0 to revision 7
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'Dbg_Disable_0'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'IP mb_subsystem_mdm_1_0'. These changes may impact your design.
+INFO: [IP_Flow 19-1972] Upgraded mb_subsystem_microblaze_0_0 from MicroBlaze 9.4 to MicroBlaze 10.0
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'Dbg_Disable'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'IP mb_subsystem_microblaze_0_0'. These changes may impact your design.
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_microblaze_0_axi_intc_0 (AXI Interrupt Controller 4.1) from revision 2 to revision 8
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_microblaze_0_axi_periph_0 (AXI Interconnect 2.1) from revision 4 to revision 11
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_microblaze_0_xlconcat_0 (Concat 2.1) from revision 0 to revision 2
+INFO: [IP_Flow 19-1972] Upgraded mb_subsystem_mig_7series_0_0 from Memory Interface Generator (MIG 7 Series) 2.2 to Memory Interface Generator (MIG 7 Series) 4.0
+INFO: [IP_Flow 19-3422] Upgraded mb_subsystem_proc_sys_reset_1_0 (Processor System Reset 5.0) from revision 6 to revision 10
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'IP mb_subsystem_axi_ethernet_0_0' has identified issues that may require user intervention. Please review the upgrade log 'f:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'IP mb_subsystem_clk_wiz_0_0' has identified issues that may require user intervention. Please review the upgrade log 'f:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'IP mb_subsystem_mdm_1_0' has identified issues that may require user intervention. Please review the upgrade log 'f:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'IP mb_subsystem_microblaze_0_0' has identified issues that may require user intervention. Please review the upgrade log 'f:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+WARNING: [BD 41-248] Illegal connection  <axi_ethernet_0_mdio> between <nullptr> and </mdio_io>  is missing one side
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ui/bd_a65fb5c5.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:29 ; elapsed = 00:00:58 . Memory (MB): peak = 1881.117 ; gain = 43.078
+export_ip_user_files -of_objects [get_ips {mb_subsystem_axi_bram_ctrl_0_0 mb_subsystem_dlmb_bram_if_cntlr_0 mb_subsystem_dlmb_v10_0 mb_subsystem_ilmb_bram_if_cntlr_1 mb_subsystem_axi_ethernet_0_dma_0 mb_subsystem_axi_mem_intercon_1 mb_subsystem_axi_uartlite_0_0 mb_subsystem_axi_ethernet_0_0 mb_subsystem_clk_wiz_0_0 mb_subsystem_microblaze_0_axi_periph_0 mb_subsystem_ilmb_v10_1 mb_subsystem_proc_sys_reset_1_0 mb_subsystem_lmb_bram_0 mb_subsystem_microblaze_0_axi_intc_0 mb_subsystem_microblaze_0_0 mb_subsystem_mig_7series_0_0 mb_subsystem_axi_timer_0_0 mb_subsystem_mdm_1_0 mb_subsystem_blk_mem_gen_0_1 mb_subsystem_microblaze_0_xlconcat_0}] -no_script -sync -force -quiet
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "mdio_mdc" }  [get_bd_intf_pins axi_ethernet_0/mdio]
+INFO: [board_rule 100-100] set_property CONFIG.MDIO_BOARD_INTERFACE mdio_mdc [get_bd_cells /axi_ethernet_0]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:mdio_rtl:1.0 mdio_mdc
+INFO: [board_rule 100-100] connect_bd_intf_net /mdio_mdc /axi_ethernet_0/mdio
+report_ip_status -name ip_status 
+validate_bd_design
+CRITICAL WARNING: [BD 41-1356] Address block </axi_ethernet_0/s_axi/Reg0> is not mapped into </microblaze_0/Data>. Please use Address Editor to either map or exclude it.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+validate_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1881.117 ; gain = 0.000
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+assign_bd_address
+</axi_ethernet_0/s_axi/Reg0> is being mapped into </microblaze_0/Data> at <0x40C00000 [ 256K ]>
+validate_bd_design
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1892.965 ; gain = 11.848
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+validate_bd_design
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1948.172 ; gain = 0.000
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+set_property CONFIG.FREQ_HZ.VALUE_SRC PROPAGATED [get_bd_pins /microblaze_mcs_1/Clk]
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /microblaze_mcs_1/Clk'
+ERROR: [Common 17-55] 'set_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+set_property CONFIG.FREQ_HZ.VALUE_SRC PROPAGATED [get_bd_pins /microblaze_mcs_1/Clk]
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /microblaze_mcs_1/Clk'
+ERROR: [Common 17-55] 'set_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+set_property CONFIG.FREQ_HZ.VALUE_SRC PROPAGATED [get_bd_pins /microblaze_mcs_1/Clk] validate_bd_design
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /microblaze_mcs_1/Clk'
+ERROR: [Common 17-161] Invalid option value 'validate_bd_design' specified for 'objects'.
+validate_bd_design
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1968.406 ; gain = 0.000
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+save_bd_design
+WARNING: [BD 41-248] Illegal connection  <axi_ethernet_0_mdio> between <nullptr> and </mdio_io>  is missing one side
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ui/bd_a65fb5c5.ui> 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd 
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+save_bd_design
+WARNING: [BD 41-248] Illegal connection  <axi_ethernet_0_mdio> between <nullptr> and </mdio_io>  is missing one side
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+launch_runs synth_1 -jobs 4
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd 
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+save_bd_design
+WARNING: [BD 41-248] Illegal connection  <axi_ethernet_0_mdio> between <nullptr> and </mdio_io>  is missing one side
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ui/bd_a65fb5c5.ui> 
+launch_runs synth_1 -jobs 4
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd 
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+validate_bd_design
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1968.406 ; gain = 0.000
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {124.999875} CONFIG.MMCM_DIVCLK_DIVIDE {8}] [get_bd_cells clk_wiz_0]
+endgroup
+validate_bd_design
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999875)
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1968.406 ; gain = 0.000
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+WARNING: [IP_Flow 19-4331] Invalid usage of property - Setting range property is not allowed in procedure init_gui
+set_property -name {CONFIG.XML_INPUT_FILE} -value  {} -objects [get_bd_cells mig_7series_0];
+set_property -name {CONFIG.XML_INPUT_FILE} -value {mig_a.prj} -objects [get_bd_cells mig_7series_0]
+mig_a.prj
+validate_bd_design
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999686)
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1968.406 ; gain = 0.000
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+save_bd_design
+WARNING: [BD 41-248] Illegal connection  <axi_ethernet_0_mdio> between <nullptr> and </mdio_io>  is missing one side
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ui/bd_a65fb5c5.ui> 
+launch_runs synth_1 -jobs 4
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999686)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd 
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+reset_property CONFIG.CLK_DOMAIN [get_bd_pins gtx_clk]
+ERROR: [Common 17-229] Tcl reset_property command for property <CONFIG.CLK_DOMAIN> is currently not supported.  The property <CONFIG.CLK_DOMAIN> cannot be reset.
+ERROR: [Common 17-39] 'reset_property' failed due to earlier errors.
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {125} CONFIG.MMCM_DIVCLK_DIVIDE {7}] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+WARNING: [BD 41-248] Illegal connection  <axi_ethernet_0_mdio> between <nullptr> and </mdio_io>  is missing one side
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+validate_bd_design
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999686)
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1968.406 ; gain = 0.000
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+save_bd_design
+WARNING: [BD 41-248] Illegal connection  <axi_ethernet_0_mdio> between <nullptr> and </mdio_io>  is missing one side
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+regenerate_bd_layout -routing
+regenerate_bd_layout
+set_property location {4085 66} [get_bd_intf_ports mdio_io]
+set_property location {4129 564} [get_bd_intf_ports mdio_io]
+set_property location {4100 923} [get_bd_intf_ports mdio_io]
+set_property location {4104 1269} [get_bd_intf_ports mdio_io]
+open_bd_design {F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd}
+generate_target all [get_files  F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd]
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /clk_wiz_0/clk_out1(124999686)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd 
+generate_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1968.406 ; gain = 0.000
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+set_property -name {CONFIG.XML_INPUT_FILE} -value  {mig_b.prj} -objects [get_bd_cells mig_7series_0]
+mig_b.prj
+set_property -name {CONFIG.RESET_BOARD_INTERFACE} -value  {reset} -objects [get_bd_cells mig_7series_0]
+reset
+set_property -name {CONFIG.MIG_DONT_TOUCH_PARAM} -value  {Custom} -objects [get_bd_cells mig_7series_0]
+Custom
+set_property -name {CONFIG.BOARD_MIG_PARAM} -value  {Custom} -objects [get_bd_cells mig_7series_0]
+Custom
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1]
+connect_bd_net [get_bd_pins mig_7series_0/ui_addn_clk_1] [get_bd_pins axi_ethernet_0/gtx_clk]
+delete_bd_objs [get_bd_cells clk_wiz_0]
+validate_bd_design
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /mig_7series_0/ui_addn_clk_1(130000000)
+validate_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1968.406 ; gain = 0.000
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+WARNING: [IP_Flow 19-4331] Invalid usage of property - Setting range property is not allowed in procedure init_gui
+startgroup
+endgroup
+report_ip_status -name ip_status 
+save_bd_design
+WARNING: [BD 41-248] Illegal connection  <axi_ethernet_0_mdio> between <nullptr> and </mdio_io>  is missing one side
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ui/bd_a65fb5c5.ui> 
+launch_runs synth_1 -jobs 4
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /mig_7series_0/ui_addn_clk_1(130000000)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd 
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+save_bd_design
+WARNING: [BD 41-248] Illegal connection  <axi_ethernet_0_mdio> between <nullptr> and </mdio_io>  is missing one side
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ui/bd_a65fb5c5.ui> 
+launch_runs synth_1 -jobs 4
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /mig_7series_0/ui_addn_clk_1(130000000)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd 
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.3 clk_wiz_0
+endgroup
+connect_bd_net [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins mig_7series_0/ui_addn_clk_1]
+disconnect_bd_net /mig_7series_0_ui_addn_clk_1 [get_bd_pins axi_ethernet_0/gtx_clk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins axi_ethernet_0/gtx_clk]
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {125} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT0_DIVIDE_F {8.000} CONFIG.CLKOUT1_JITTER {125.247}] [get_bd_cells clk_wiz_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "reset" }  [get_bd_pins clk_wiz_0/reset]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /clk_wiz_0]
+INFO: [board_rule 100-100] set_property CONFIG.RESET_BOARD_INTERFACE reset [get_bd_cells /clk_wiz_0]
+INFO: [board_rule 100-100] connect_bd_net /reset /clk_wiz_0/reset
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_HIGH /reset
+validate_bd_design
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0xFFFFFFFF.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1968.406 ; gain = 0.000
+report_ip_status -name ip_status 
+save_bd_design
+WARNING: [BD 41-248] Illegal connection  <axi_ethernet_0_mdio> between <nullptr> and </mdio_io>  is missing one side
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd> 
+Wrote  : <F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ui/bd_a65fb5c5.ui> 
+launch_runs synth_1 -jobs 4
+INFO: [BD 41-1662] The design 'mb_subsystem.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_bram_porta_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to net 'axi_bram_ctrl_0_bram_portb_ADDR'(16) - Only lower order bits will be connected.
+Verilog Output written to : F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/hdl/mb_subsystem.v
+Verilog Output written to : F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/hdl/mb_subsystem_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+WARNING: [IP_Flow 19-650] IP license key 'eth_avb_endpoint@2015.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'eth_avb_endpoint@2015.04' is enabled with a Design_Linking license.
+Exporting to file f:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_ethernet_0_0/bd_0/hw_handoff/mb_subsystem_axi_ethernet_0_0.hwh
+Generated Block Design Tcl file f:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_ethernet_0_0/bd_0/hw_handoff/mb_subsystem_axi_ethernet_0_0_bd.tcl
+Generated Hardware Definition File f:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_ethernet_0_0/bd_0/hdl/mb_subsystem_axi_ethernet_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ethernet_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ethernet_0_dma .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/s00_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/s00_data_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/s01_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/s01_data_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/s02_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/s02_data_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s03_couplers/s03_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s03_couplers/s03_data_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s04_couplers/s04_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s04_couplers/s04_data_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/m00_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m01_couplers/m01_regslice .
+Exporting to file F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/hw_handoff/mb_subsystem.hwh
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+Generated Block Design Tcl file F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/hw_handoff/mb_subsystem_bd.tcl
+Generated Hardware Definition File F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/hdl/mb_subsystem.hwdef
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/hdl/mb_subsystem_wrapper.v" into library work [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/hdl/mb_subsystem_wrapper.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/hdl/mb_subsystem.v" into library work [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/hdl/mb_subsystem.v:1]
+[Mon Sep 04 11:33:49 2017] Launched synth_1...
+Run output will be captured here: F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2073.699 ; gain = 105.293
+report_ip_status -name ip_status 
+launch_runs impl_1 -jobs 4
+[Mon Sep 04 12:00:48 2017] Launched impl_1...
+Run output will be captured here: F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Sep 04 12:13:18 2017] Launched impl_1...
+Run output will be captured here: F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 2083 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/.Xil/Vivado-11980-PCMICVFAT3/dcp/mb_subsystem_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mdm_1_0/mb_subsystem_mdm_1_0.xdc:50]
+INFO: [Timing 38-2] Deriving generated clocks [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mdm_1_0/mb_subsystem_mdm_1_0.xdc:50]
+get_clocks: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 3029.051 ; gain = 615.129
+INFO: [Timing 38-2] Deriving generated clocks [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_clk_wiz_0_1/mb_subsystem_clk_wiz_0_1.xdc:57]
+Finished Parsing XDC File [F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/.Xil/Vivado-11980-PCMICVFAT3/dcp/mb_subsystem_wrapper_early.xdc]
+Parsing XDC File [F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/.Xil/Vivado-11980-PCMICVFAT3/dcp/mb_subsystem_wrapper.xdc]
+CRITICAL WARNING: [Constraints 18-1056] Clock 'sys_clk_pin' completely overrides clock 'sys_clk_p'.
+New: create_clock -period 5.000 -name sys_clk_pin [get_ports sys_clk_p], [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/constrs_1/new/system.xdc:9]
+Previous: create_clock -period 4.999 [get_ports sys_clk_p], [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_mig_7series_0_0/mb_subsystem_mig_7series_0_0/user_design/constraints/mb_subsystem_mig_7series_0_0.xdc:26]
+Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is mb_subsystem_i/axi_ethernet_0/inst/eth_mac/inst/tri_mode_ethernet_mac_i/gmii_interface/gmii_tx_en_obuf_reg [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/constrs_1/new/system.xdc:13]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is mb_subsystem_i/axi_ethernet_0/inst/eth_mac/inst/tri_mode_ethernet_mac_i/gmii_interface/gmii_tx_er_obuf_reg [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/constrs_1/new/system.xdc:13]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is mb_subsystem_i/axi_ethernet_0/inst/eth_mac/inst/tri_mode_ethernet_mac_i/gmii_interface/gmii_txd_obuf_reg[0] [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/constrs_1/new/system.xdc:13]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is mb_subsystem_i/axi_ethernet_0/inst/eth_mac/inst/tri_mode_ethernet_mac_i/gmii_interface/gmii_txd_obuf_reg[1] [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/constrs_1/new/system.xdc:13]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is mb_subsystem_i/axi_ethernet_0/inst/eth_mac/inst/tri_mode_ethernet_mac_i/gmii_interface/gmii_txd_obuf_reg[2] [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/constrs_1/new/system.xdc:13]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is mb_subsystem_i/axi_ethernet_0/inst/eth_mac/inst/tri_mode_ethernet_mac_i/gmii_interface/gmii_txd_obuf_reg[3] [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/constrs_1/new/system.xdc:13]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is mb_subsystem_i/axi_ethernet_0/inst/eth_mac/inst/tri_mode_ethernet_mac_i/gmii_interface/gmii_txd_obuf_reg[4] [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/constrs_1/new/system.xdc:13]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is mb_subsystem_i/axi_ethernet_0/inst/eth_mac/inst/tri_mode_ethernet_mac_i/gmii_interface/gmii_txd_obuf_reg[5] [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/constrs_1/new/system.xdc:13]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is mb_subsystem_i/axi_ethernet_0/inst/eth_mac/inst/tri_mode_ethernet_mac_i/gmii_interface/gmii_txd_obuf_reg[6] [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/constrs_1/new/system.xdc:13]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is mb_subsystem_i/axi_ethernet_0/inst/eth_mac/inst/tri_mode_ethernet_mac_i/gmii_interface/gmii_txd_obuf_reg[7] [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/constrs_1/new/system.xdc:13]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is mb_subsystem_i/axi_ethernet_0/inst/eth_mac/inst/tri_mode_ethernet_mac_i/gmii_interface/rx_dv_to_mac_reg [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/constrs_1/new/system.xdc:13]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is mb_subsystem_i/axi_ethernet_0/inst/eth_mac/inst/tri_mode_ethernet_mac_i/gmii_interface/rx_er_to_mac_reg [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/constrs_1/new/system.xdc:13]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is mb_subsystem_i/axi_ethernet_0/inst/eth_mac/inst/tri_mode_ethernet_mac_i/gmii_interface/rxd_to_mac_reg[0] [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/constrs_1/new/system.xdc:13]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is mb_subsystem_i/axi_ethernet_0/inst/eth_mac/inst/tri_mode_ethernet_mac_i/gmii_interface/rxd_to_mac_reg[1] [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/constrs_1/new/system.xdc:13]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is mb_subsystem_i/axi_ethernet_0/inst/eth_mac/inst/tri_mode_ethernet_mac_i/gmii_interface/rxd_to_mac_reg[2] [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/constrs_1/new/system.xdc:13]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is mb_subsystem_i/axi_ethernet_0/inst/eth_mac/inst/tri_mode_ethernet_mac_i/gmii_interface/rxd_to_mac_reg[3] [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/constrs_1/new/system.xdc:13]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is mb_subsystem_i/axi_ethernet_0/inst/eth_mac/inst/tri_mode_ethernet_mac_i/gmii_interface/rxd_to_mac_reg[4] [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/constrs_1/new/system.xdc:13]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is mb_subsystem_i/axi_ethernet_0/inst/eth_mac/inst/tri_mode_ethernet_mac_i/gmii_interface/rxd_to_mac_reg[5] [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/constrs_1/new/system.xdc:13]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is mb_subsystem_i/axi_ethernet_0/inst/eth_mac/inst/tri_mode_ethernet_mac_i/gmii_interface/rxd_to_mac_reg[6] [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/constrs_1/new/system.xdc:13]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is mb_subsystem_i/axi_ethernet_0/inst/eth_mac/inst/tri_mode_ethernet_mac_i/gmii_interface/rxd_to_mac_reg[7] [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/constrs_1/new/system.xdc:13]
+Finished Parsing XDC File [F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/.Xil/Vivado-11980-PCMICVFAT3/dcp/mb_subsystem_wrapper.xdc]
+Parsing XDC File [F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/.Xil/Vivado-11980-PCMICVFAT3/dcp/mb_subsystem_wrapper_late.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_ethernet_0_0/bd_0/ip/ip_0/synth/bd_1ed2_eth_buf_0.xdc:64]
+Finished Parsing XDC File [F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/.Xil/Vivado-11980-PCMICVFAT3/dcp/mb_subsystem_wrapper_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3045.398 ; gain = 0.000
+Restored from archive | CPU: 5.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3045.398 ; gain = 0.000
+Generating merged BMM file for the design top 'mb_subsystem_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: f:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_microblaze_0_0/data/mb_bootloop_le.elf 
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 889 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+  IOBUFDS_DIFF_OUT_DCIEN => IOBUFDS_DIFF_OUT_DCIEN (IBUFDS_IBUFDISABLE_INT, IBUFDS_IBUFDISABLE_INT, OBUFTDS_DCIEN, OBUFTDS_DCIEN, INV): 8 instances
+  IOBUF_DCIEN => IOBUF_DCIEN (IBUF_IBUFDISABLE, OBUFT_DCIEN): 64 instances
+  LUT6_2 => LUT6_2 (LUT6, LUT5): 82 instances
+  OBUFDS => OBUFDS_DUAL_BUF (OBUFDS, OBUFDS, INV): 1 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 535 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 6 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 160 instances
+
+open_run: Time (s): cpu = 00:01:13 ; elapsed = 00:00:57 . Memory (MB): peak = 3104.250 ; gain = 1022.586
+open_report: Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 3229.973 ; gain = 111.777
+file mkdir F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk
+file copy -force F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.runs/impl_1/mb_subsystem_wrapper.sysdef F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk/mb_subsystem_wrapper.hdf
+
+launch_sdk -workspace F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk -hwspec F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk/mb_subsystem_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk -hwspec F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk/mb_subsystem_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Sep 04 14:55:39 2017] Launched impl_1...
+Run output will be captured here: F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.runs/impl_1/runme.log
+file copy -force F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.runs/impl_1/mb_subsystem_wrapper.sysdef F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk/mb_subsystem_wrapper.hdf
+
+file copy -force F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.runs/impl_1/mb_subsystem_wrapper.sysdef F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk/mb_subsystem_wrapper.hdf
+
+launch_sdk -workspace F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk -hwspec F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk/mb_subsystem_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk -hwspec F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk/mb_subsystem_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk -hwspec F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk/mb_subsystem_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk -hwspec F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk/mb_subsystem_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 04 15:32:23 2017...

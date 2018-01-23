@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# 
+# Start of session at: Sat Oct 14 12:26:31 2017
+# Process ID: 4084
+# Current directory: F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.sdk/webtalk/webtalk.log
+# Journal file: F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

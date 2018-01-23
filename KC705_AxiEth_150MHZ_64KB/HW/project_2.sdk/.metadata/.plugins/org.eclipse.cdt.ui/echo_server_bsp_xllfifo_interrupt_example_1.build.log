@@ -1,0 +1,22 @@
+18:40:52 **** Auto Build of configuration Debug for project echo_server_bsp_xllfifo_interrupt_example_1 ****
+make all 
+'Building file: ../src/xllfifo_interrupt_example.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xllfifo_interrupt_example.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xllfifo_interrupt_example.d" -MT"src/xllfifo_interrupt_example.o" -o "src/xllfifo_interrupt_example.o" "../src/xllfifo_interrupt_example.c"
+../src/xllfifo_interrupt_example.c: In function 'XLlFifoInterruptExample':
+../src/xllfifo_interrupt_example.c:95:23: error: 'XPAR_INTC_0_LLFIFO_0_VEC_ID' undeclared (first use in this function)
+ #define FIFO_INTR_ID  XPAR_INTC_0_LLFIFO_0_VEC_ID
+                       ^
+../src/xllfifo_interrupt_example.c:261:52: note: in expansion of macro 'FIFO_INTR_ID'
+  Status = SetupInterruptSystem(&Intc, InstancePtr, FIFO_INTR_ID);
+                                                    ^~~~~~~~~~~~
+../src/xllfifo_interrupt_example.c:95:23: note: each undeclared identifier is reported only once for each function it appears in
+ #define FIFO_INTR_ID  XPAR_INTC_0_LLFIFO_0_VEC_ID
+                       ^
+../src/xllfifo_interrupt_example.c:261:52: note: in expansion of macro 'FIFO_INTR_ID'
+  Status = SetupInterruptSystem(&Intc, InstancePtr, FIFO_INTR_ID);
+                                                    ^~~~~~~~~~~~
+make: *** [src/xllfifo_interrupt_example.o] Error 1
+
+18:40:52 Build Finished (took 230ms)
+

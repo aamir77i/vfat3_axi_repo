@@ -1,0 +1,201 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Sep 01 12:03:46 2017
+# Process ID: 11980
+# Current directory: F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12804 F:\XAPP1026\KC705_AxiEth_150MHZ_64KB\HW\project_2.xpr
+# Log file: F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/vivado.log
+# Journal file: F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.xpr
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {mb_subsystem_lmb_bram_0 mb_subsystem_proc_sys_reset_1_0 mb_subsystem_ilmb_v10_1 mb_subsystem_axi_bram_ctrl_0_0 mb_subsystem_dlmb_bram_if_cntlr_0 mb_subsystem_axi_ethernet_0_dma_0 mb_subsystem_mig_7series_0_0 mb_subsystem_axi_timer_0_0 mb_subsystem_axi_uartlite_0_0 mb_subsystem_blk_mem_gen_0_1 mb_subsystem_microblaze_0_axi_intc_0 mb_subsystem_microblaze_0_xlconcat_0 mb_subsystem_axi_mem_intercon_1 mb_subsystem_mdm_1_0 mb_subsystem_axi_ethernet_0_0 mb_subsystem_ilmb_bram_if_cntlr_1 mb_subsystem_clk_wiz_0_0 mb_subsystem_microblaze_0_0 mb_subsystem_microblaze_0_axi_periph_0 mb_subsystem_dlmb_v10_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {mb_subsystem_lmb_bram_0 mb_subsystem_proc_sys_reset_1_0 mb_subsystem_ilmb_v10_1 mb_subsystem_axi_bram_ctrl_0_0 mb_subsystem_dlmb_bram_if_cntlr_0 mb_subsystem_axi_ethernet_0_dma_0 mb_subsystem_mig_7series_0_0 mb_subsystem_axi_timer_0_0 mb_subsystem_axi_uartlite_0_0 mb_subsystem_blk_mem_gen_0_1 mb_subsystem_microblaze_0_axi_intc_0 mb_subsystem_microblaze_0_xlconcat_0 mb_subsystem_axi_mem_intercon_1 mb_subsystem_mdm_1_0 mb_subsystem_axi_ethernet_0_0 mb_subsystem_ilmb_bram_if_cntlr_1 mb_subsystem_clk_wiz_0_0 mb_subsystem_microblaze_0_0 mb_subsystem_microblaze_0_axi_periph_0 mb_subsystem_dlmb_v10_0}] -no_script -sync -force -quiet
+generate_target all [get_files  F:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd]
+report_ip_status -name ip_status 
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "mdio_mdc" }  [get_bd_intf_pins axi_ethernet_0/mdio]
+assign_bd_address
+reset_run synth_1
+save_bd_design
+launch_runs impl_1 -jobs 4
+startgroup
+endgroup
+startgroup
+set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {12} CONFIG.CLKOUT1_JITTER {91.783} CONFIG.CLKOUT1_PHASE_ERROR {73.619}] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+launch_runs impl_1 -jobs 4
+startgroup
+set_property -dict [list CONFIG.PRIMITIVE {MMCM} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} CONFIG.MMCM_DIVCLK_DIVIDE {8} CONFIG.MMCM_CLKFBOUT_MULT_F {41.625} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.250} CONFIG.CLKOUT1_JITTER {303.419} CONFIG.CLKOUT1_PHASE_ERROR {333.289}] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+launch_runs impl_1 -jobs 4
+startgroup
+endgroup
+save_bd_design
+launch_runs synth_1 -jobs 4
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {125} CONFIG.MMCM_DIVCLK_DIVIDE {8} CONFIG.MMCM_CLKFBOUT_MULT_F {41.625} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.250} CONFIG.CLKOUT1_JITTER {303.419} CONFIG.CLKOUT1_PHASE_ERROR {333.289}] [get_bd_cells clk_wiz_0]
+endgroup
+validate_bd_design
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1]
+undo
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1]
+validate_bd_design
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins axi_ethernet_0/gtx_clk]
+validate_bd_design
+reset_property CONFIG.FREQ_HZ [get_bd_pins gtx_clk]
+validate_bd_design
+validate_bd_design
+reset_property CONFIG.FREQ_HZ [get_bd_pins clk_out1]
+reset_property CONFIG.FREQ_HZ [get_bd_pins clk_out1]
+save_bd_design
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1]
+delete_bd_objs [get_bd_cells clk_wiz_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.3 clk_wiz_0
+endgroup
+set_property location {6 2333 810} [get_bd_cells clk_wiz_0]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins axi_ethernet_0/gtx_clk]
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {125} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT0_DIVIDE_F {8.000} CONFIG.CLKOUT1_JITTER {125.247}] [get_bd_cells clk_wiz_0]
+endgroup
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+regenerate_bd_layout
+undo
+undo
+undo
+undo
+undo
+validate_bd_design
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1] [get_bd_cells clk_wiz_0]
+undo
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1] [get_bd_cells clk_wiz_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.3 clk_wiz_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {125} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT0_DIVIDE_F {8.000} CONFIG.CLKOUT1_JITTER {125.247}] [get_bd_cells clk_wiz_0]
+endgroup
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins axi_ethernet_0/gtx_clk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins mig_7series_0/ui_clk]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "reset" }  [get_bd_pins clk_wiz_0/reset]
+validate_bd_design
+report_ip_status -name ip_status 
+open_bd_design {f:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/ip/mb_subsystem_axi_ethernet_0_0/bd_0/bd_1ed2.bd}
+current_bd_design [get_bd_designs mb_subsystem]
+regenerate_bd_layout
+save_bd_design
+validate_bd_design
+save_bd_design
+validate_bd_design
+save_bd_design
+validate_bd_design
+close_project
+open_project F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.xpr
+open_bd_design {F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd}
+validate_bd_design
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {mb_subsystem_axi_bram_ctrl_0_0 mb_subsystem_dlmb_bram_if_cntlr_0 mb_subsystem_dlmb_v10_0 mb_subsystem_ilmb_bram_if_cntlr_1 mb_subsystem_axi_ethernet_0_dma_0 mb_subsystem_axi_mem_intercon_1 mb_subsystem_axi_uartlite_0_0 mb_subsystem_axi_ethernet_0_0 mb_subsystem_clk_wiz_0_0 mb_subsystem_microblaze_0_axi_periph_0 mb_subsystem_ilmb_v10_1 mb_subsystem_proc_sys_reset_1_0 mb_subsystem_lmb_bram_0 mb_subsystem_microblaze_0_axi_intc_0 mb_subsystem_microblaze_0_0 mb_subsystem_mig_7series_0_0 mb_subsystem_axi_timer_0_0 mb_subsystem_mdm_1_0 mb_subsystem_blk_mem_gen_0_1 mb_subsystem_microblaze_0_xlconcat_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {mb_subsystem_axi_bram_ctrl_0_0 mb_subsystem_dlmb_bram_if_cntlr_0 mb_subsystem_dlmb_v10_0 mb_subsystem_ilmb_bram_if_cntlr_1 mb_subsystem_axi_ethernet_0_dma_0 mb_subsystem_axi_mem_intercon_1 mb_subsystem_axi_uartlite_0_0 mb_subsystem_axi_ethernet_0_0 mb_subsystem_clk_wiz_0_0 mb_subsystem_microblaze_0_axi_periph_0 mb_subsystem_ilmb_v10_1 mb_subsystem_proc_sys_reset_1_0 mb_subsystem_lmb_bram_0 mb_subsystem_microblaze_0_axi_intc_0 mb_subsystem_microblaze_0_0 mb_subsystem_mig_7series_0_0 mb_subsystem_axi_timer_0_0 mb_subsystem_mdm_1_0 mb_subsystem_blk_mem_gen_0_1 mb_subsystem_microblaze_0_xlconcat_0}] -no_script -sync -force -quiet
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "mdio_mdc" }  [get_bd_intf_pins axi_ethernet_0/mdio]
+report_ip_status -name ip_status 
+validate_bd_design
+assign_bd_address
+validate_bd_design
+validate_bd_design
+set_property CONFIG.FREQ_HZ.VALUE_SRC PROPAGATED [get_bd_pins /microblaze_mcs_1/Clk]
+set_property CONFIG.FREQ_HZ.VALUE_SRC PROPAGATED [get_bd_pins /microblaze_mcs_1/Clk]
+set_property CONFIG.FREQ_HZ.VALUE_SRC PROPAGATED [get_bd_pins /microblaze_mcs_1/Clk] validate_bd_design
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+save_bd_design
+launch_runs synth_1 -jobs 4
+save_bd_design
+launch_runs synth_1 -jobs 4
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {124.999875} CONFIG.MMCM_DIVCLK_DIVIDE {8}] [get_bd_cells clk_wiz_0]
+endgroup
+validate_bd_design
+set_property -name {CONFIG.XML_INPUT_FILE} -value  {} -objects [get_bd_cells mig_7series_0];
+set_property -name {CONFIG.XML_INPUT_FILE} -value {mig_a.prj} -objects [get_bd_cells mig_7series_0]
+validate_bd_design
+save_bd_design
+launch_runs synth_1 -jobs 4
+reset_property CONFIG.CLK_DOMAIN [get_bd_pins gtx_clk]
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {125} CONFIG.MMCM_DIVCLK_DIVIDE {7}] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+validate_bd_design
+save_bd_design
+regenerate_bd_layout -routing
+regenerate_bd_layout
+set_property location {4085 66} [get_bd_intf_ports mdio_io]
+set_property location {4129 564} [get_bd_intf_ports mdio_io]
+set_property location {4100 923} [get_bd_intf_ports mdio_io]
+set_property location {4104 1269} [get_bd_intf_ports mdio_io]
+open_bd_design {F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd}
+generate_target all [get_files  F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.srcs/sources_1/bd/mb_subsystem/mb_subsystem.bd]
+set_property -name {CONFIG.XML_INPUT_FILE} -value  {mig_b.prj} -objects [get_bd_cells mig_7series_0]
+set_property -name {CONFIG.RESET_BOARD_INTERFACE} -value  {reset} -objects [get_bd_cells mig_7series_0]
+set_property -name {CONFIG.MIG_DONT_TOUCH_PARAM} -value  {Custom} -objects [get_bd_cells mig_7series_0]
+set_property -name {CONFIG.BOARD_MIG_PARAM} -value  {Custom} -objects [get_bd_cells mig_7series_0]
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out1]
+connect_bd_net [get_bd_pins mig_7series_0/ui_addn_clk_1] [get_bd_pins axi_ethernet_0/gtx_clk]
+delete_bd_objs [get_bd_cells clk_wiz_0]
+validate_bd_design
+startgroup
+endgroup
+report_ip_status -name ip_status 
+save_bd_design
+launch_runs synth_1 -jobs 4
+save_bd_design
+launch_runs synth_1 -jobs 4
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.3 clk_wiz_0
+endgroup
+connect_bd_net [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins mig_7series_0/ui_addn_clk_1]
+disconnect_bd_net /mig_7series_0_ui_addn_clk_1 [get_bd_pins axi_ethernet_0/gtx_clk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins axi_ethernet_0/gtx_clk]
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {125} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT0_DIVIDE_F {8.000} CONFIG.CLKOUT1_JITTER {125.247}] [get_bd_cells clk_wiz_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "reset" }  [get_bd_pins clk_wiz_0/reset]
+validate_bd_design
+report_ip_status -name ip_status 
+save_bd_design
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+report_ip_status -name ip_status 
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+file mkdir F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk
+file copy -force F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.runs/impl_1/mb_subsystem_wrapper.sysdef F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk/mb_subsystem_wrapper.hdf
+
+launch_sdk -workspace F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk -hwspec F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk/mb_subsystem_wrapper.hdf
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.runs/impl_1/mb_subsystem_wrapper.sysdef F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk/mb_subsystem_wrapper.hdf
+
+file copy -force F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.runs/impl_1/mb_subsystem_wrapper.sysdef F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk/mb_subsystem_wrapper.hdf
+
+launch_sdk -workspace F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk -hwspec F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk/mb_subsystem_wrapper.hdf
+launch_sdk -workspace F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk -hwspec F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk/mb_subsystem_wrapper.hdf

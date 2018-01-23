@@ -1,0 +1,18 @@
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Note: axi_iic configured for SDA inertial delay of 0 clocks.
+Time: 0 ps  Iteration: 0  Process: /axi_iic_0_exdes_tb/DUT_TB/DUT/U0/X_IIC/FILTER_I/line__5035  File: /wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_iic_v2_0/hdl/axi_iic_v2_0_vh_rfs.vhd
+Note: axi_iic configured for SCL inertial delay of 0 clocks.
+Time: 0 ps  Iteration: 0  Process: /axi_iic_0_exdes_tb/DUT_TB/DUT/U0/X_IIC/FILTER_I/line__5009  File: /wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/axi_iic_v2_0/hdl/axi_iic_v2_0_vh_rfs.vhd
+Note: First ACK received from I2C
+Time: 376819499 ps  Iteration: 0  Process: /axi_iic_0_exdes_tb/line__162  File: f:/XAPP1026/KC705_AxiEth_150MHZ_64KB/axi_iic_0_ex/imports/axi_iic_0_exdes_tb.vhd
+Note: Second ACK received from I2C
+Time: 466879499 ps  Iteration: 0  Process: /axi_iic_0_exdes_tb/line__162  File: f:/XAPP1026/KC705_AxiEth_150MHZ_64KB/axi_iic_0_ex/imports/axi_iic_0_exdes_tb.vhd
+## SYSTEM_CYCLE_COUNTER 94445 ns
+Failure: Test Completed Successfully
+Time: 472225833 ps  Iteration: 2  Process: /axi_iic_0_exdes_tb/line__225  File: f:/XAPP1026/KC705_AxiEth_150MHZ_64KB/axi_iic_0_ex/imports/axi_iic_0_exdes_tb.vhd
+$finish called at time : 472225833 ps : File "f:/XAPP1026/KC705_AxiEth_150MHZ_64KB/axi_iic_0_ex/imports/axi_iic_0_exdes_tb.vhd" Line 238

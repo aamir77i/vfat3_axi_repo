@@ -1,0 +1,6 @@
+16:39:09 **** Incremental Build of configuration Debug for project echo_server_bsp_xiic_low_level_eeprom_example_2 ****
+make all 
+make: Nothing to be done for `all'.
+
+16:39:09 Build Finished (took 117ms)
+

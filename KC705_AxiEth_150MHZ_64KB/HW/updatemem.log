@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# updatemem v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# 
+# Start of session at: Mon Sep 04 15:16:16 2017
+# Process ID: 12508
+# Current directory: f:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/SDK/2016.3/scripts/updatemem/main.tcl -notrace -tclargs -meminfo F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk/mb_subsystem_wrapper_hw_platform_0/mb_subsystem_wrapper.mmi -data C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc mb_subsystem_i/microblaze_0 -bit F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk/mb_subsystem_wrapper_hw_platform_0/mb_subsystem_wrapper.bit -out F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk/mb_subsystem_wrapper_hw_platform_0/download.bit -force
+# Log file: f:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW/updatemem.log
+# Journal file: f:/XAPP1026/KC705_AxiEth_150MHZ_64KB/HW\updatemem.jou
+#-----------------------------------------------------------
+source C:/Xilinx/SDK/2016.3/scripts/updatemem/main.tcl -notrace
+ Loading bitfile F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk/mb_subsystem_wrapper_hw_platform_0/mb_subsystem_wrapper.bit
+Loading data files...
+Updating memory content...
+Creating bitstream...
+Writing bitstream F:/XAPP1026/KC705_AxiEth_150MHZ_32KB/HW/project_2.sdk/mb_subsystem_wrapper_hw_platform_0/download.bit...
+  update_mem: Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 531.629 ; gain = 480.395
+INFO: [Common 17-206] Exiting updatemem at Mon Sep 04 15:16:37 2017...
